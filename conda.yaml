@@ -1,0 +1,6 @@
+name: tests
+channels:
+  - defaults
+dependencies:
+  - conda
+  - python=3.9

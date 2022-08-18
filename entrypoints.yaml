@@ -1,0 +1,35 @@
+version: 1
+entrypoints:
+    test1:
+        command: python3 test1.py {{sleep}}
+        arguments:
+            sleep:
+                default: 1
+                type: float
+                description: "How long to wait before exiting in seconds"
+    test2:
+        command: python3 test2.py {{count}} {{size}}
+        arguments:
+            count:
+                default: 1
+                type: integer
+                description: "Number of files to generate"
+            size:
+                default: 50
+                type: integer
+                description: "Size of each file in bytes"
+    test3:
+        command: python3 test3.py {{samples}} {{amplitude}} {{frequency}}
+        arguments:
+            samples:
+                default: 100
+                type: integer
+                description: "Number of plot samples"
+            amplitude:
+                default: 1
+                type: float
+                description: "Amplitude of sine plot"
+            frequency:
+                default: 20
+                type: float
+                description: "Frequency of sine plot"
