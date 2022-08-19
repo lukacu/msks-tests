@@ -1,29 +1,29 @@
 version: 1
 entrypoints:
     test1:
-        command: python3 test1.py {{sleep}}
+        command: python3 -m test1 {{sleep}}
         arguments:
             sleep:
                 default: 1
                 type: float
                 description: "How long to wait before exiting in seconds"
     test2:
-        command: python3 test2.py {{count}} {{size}}
+        command: python3 -m test2 {{count}} {{size}}
         arguments:
             count:
                 default: 1
-                type: integer
+                type: int
                 description: "Number of files to generate"
             size:
                 default: 50
-                type: integer
+                type: int
                 description: "Size of each file in bytes"
     test3:
-        command: python3 test3.py {{samples}} {{amplitude}} {{frequency}}
+        command: python3 -m test3 {{samples}} {{amplitude}} {{frequency}}
         arguments:
             samples:
                 default: 100
-                type: integer
+                type: int
                 description: "Number of plot samples"
             amplitude:
                 default: 1
