@@ -9,7 +9,7 @@ if __name__ == "__main__":
     frequency = float(sys.argv[3])
 
     for i in range(samples):
-        value = amplitude * math.sin(samples / frequency)
+        value = amplitude * math.sin(i / frequency)
         print("sine_wave: {}".format(value))
 
     print("Done.")
