@@ -18,6 +18,8 @@ entrypoints:
                 default: 50
                 type: int
                 description: "Size of each file in bytes"
+        artifacts:
+            - file*.dat
     test3:
         command: python3 -m test3 {{samples}} {{amplitude}} {{frequency}}
         arguments:
