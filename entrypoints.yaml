@@ -36,4 +36,4 @@ entrypoints:
                 type: float
                 description: "Frequency of sine plot"
         observers:
-            - type: iterative
+            - type: sequences
